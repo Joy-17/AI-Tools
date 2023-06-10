@@ -1,0 +1,41 @@
+// 992px
+@media(max-width:992px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .banner{
+        .service{
+            .service-list-li {
+                width: 100%;
+            }
+
+        }
+    }
+    
+
+}
+
+// 767px
+
+@media(max-width:767px) {
+    .container {
+        max-width: 720px;
+
+    }
+
+    .service-list-li {
+        width: 100%;
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        max-width: 540px;
+
+    }
+
+    .service-list-li {
+        width: 100%;
+    }
+}

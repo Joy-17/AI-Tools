@@ -1,0 +1,466 @@
+// banner
+.banner {
+    line-height: 1.2;
+    padding-bottom: 160px;
+
+    a {
+        color: $font-color;
+    }
+
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+
+    .banner-title {
+        font-size: 120px;
+        margin: 40px 0;
+    }
+
+    // 開始使用按鈕
+    .start {
+        font-size: 20px;
+        padding: 20px 40px;
+        border: 1px solid $font-color;
+        border-radius: 16px;
+        gap: 10px;
+    }
+
+    .banner-animation {
+        display: flex;
+
+        justify-content: end;
+
+
+    }
+
+    .service {
+        margin: 160px 0;
+
+        .service-between {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        // 我們的服務
+        h2 {
+            display: block;
+            width: 414px;
+            font-size: 32px;
+
+        }
+
+        h3 {
+            width: 856px;
+            font-size: 48px;
+        }
+
+        .service-list {
+            width: 100%;
+            margin: 80px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-list-li {
+            width: calc((100% - 48px)/3);
+            gap: 20px;
+            border: 1px solid #525252;
+            border-radius: 16px;
+            padding: 80px 40px;
+            display: flex;
+            flex-direction: column;
+            
+            img{
+                width: 68px;
+                
+            }
+            h3 {
+                font-size: 32px;
+            }
+            p {
+                color: $font-color;
+                line-height: 1.5;
+            }
+
+        }
+    }
+
+    .partner {
+        h2 {
+            font-size: 32px;
+            margin: 80px 0;
+        }
+    }
+
+    .partner-first {
+
+
+        img {
+            height: 40px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+
+    }
+
+
+
+    .partner-second {
+        img {
+            height: 40px;
+
+            overflow: clip;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    .recommend-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch, flex-start;
+
+
+    }
+
+    .recommend {
+        width: 416px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 40px;
+        border-radius: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .evaluate {
+            line-height: 1.5;
+            margin: 20px 0;
+            color: $font-color;
+
+
+        }
+
+        .avatar {
+            display: flex;
+            align-items: end;
+            margin: 21px 0px;
+
+            .avatar-name {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                margin-left: 16px;
+
+                h3 {
+                    margin-bottom: 4px;
+                }
+            }
+
+
+        }
+    }
+
+
+
+
+}
+
+// bg-white
+.bg-white {
+    padding: 160px 0;
+    border-radius: 160px;
+
+    .container {
+
+        background: $sec-color;
+        color: $sec-font-color ;
+    }
+
+    background: $sec-color;
+    color: $sec-font-color;
+
+    .tools {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        .tools-title {
+            margin: 80px 0;
+            font-size: 80px;
+            font-weight: 900;
+            text-align: center;
+
+        }
+    }
+
+
+    // 搜尋列
+    .tools-search {
+        line-height: 1.5;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    // 輸入關鍵字搜尋
+    .tools-search-bar {
+        width: 100%;
+        padding: 20px 40px;
+        padding-left: 70px;
+        gap: 12px;
+        border-radius: 16px;
+        background-color: #f2f2f2;
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/search.png?raw=true);
+        background-position: 40px center;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    // 篩選
+    .tools-search-filter {
+        padding: 20px 32px 20px 40px;
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        line-height: 1.5;
+        font-weight: 400;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+
+
+    }
+}
+
+// 分類表
+.tools-search-row {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 24px;
+
+
+    .tools-search-row-button {
+        border-radius: 16px;
+        background: white;
+        padding: 20px 40px;
+        gap: 12px;
+        color: rgba(145, 145, 145, 1);
+
+        &:hover {
+            background: #f2f2f2;
+            color: rgba(2, 2, 2, 1);
+        }
+    }
+
+
+
+}
+
+// ｔａｓｋ１
+.tools-list {
+    margin: 24px 0;
+
+    ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: space-between;
+
+    }
+
+    li {
+        width: 416px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 16px;
+        border: 1px solid #F2F2F2;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &:hover .img {
+
+
+            transform: scale(1.2);
+            object-fit: cover;
+            transition: 0.5s;
+
+        }
+    }
+
+    img {
+        width: 416px;
+
+
+    }
+
+    h3 {
+
+        color: #020202;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+
+
+
+}
+
+.imghover {
+    width: 416px;
+    height: 312px;
+    overflow: hidden;
+}
+
+.img {
+    transition: 0.5s;
+}
+
+.tools-info {
+    flex-grow: 1;
+}
+
+.tools-info,
+.tools-ai,
+.tools-tag {
+    padding: 20px 32px;
+    border-bottom: 1px solid #F2F2F2;
+
+
+}
+
+
+
+.tools-info p {
+    color: #525252;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 12px;
+
+}
+
+.tools-ai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 16px;
+
+    p {
+        font-weight: 700;
+    }
+}
+
+
+.tools-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 16px;
+
+    a {
+        width: 20px;
+        height: 20px;
+        background-image:
+            url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true");
+        background-size: contain;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+
+
+// 頁碼
+.pagination {
+    display: flex;
+    
+    align-items: center;
+    justify-content: end;
+
+    li {
+        width: 48px;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        a {
+            padding: 16px 20px;
+            
+            color: rgba(2, 2, 2, 1);
+            background: #FFFFFF;
+            border-radius: 16px;
+            &:hover {
+                color: #FFFFFF;
+                background: #000;
+            }
+        }
+
+
+    }
+
+
+}
+
+.CallToActoin{
+    padding: 80px;
+    margin: 80px;
+    h2{
+        font-size: 48px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .CallToAction-button{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    a{
+        padding: 20px 32px 20px 40px;
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.5;
+        color: $font-color;
+        display: block;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 16px;
+        &:hover{
+            color: #000;
+            background: $sec-color ;
+        }
+    
+    }
+}

@@ -1,0 +1,17 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body{
+    background: $primary-color ;
+    line-height: 1.5;
+}
+.container{
+    
+    width: 1296px;
+    margin: auto;
+    font-size: 16px ;
+    font-family: $font-base;
+    background: $primary-color;
+    color: $font-color;
+
+}

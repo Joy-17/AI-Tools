@@ -1,0 +1,503 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1296px;
+  margin: auto;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  background: black;
+  color: #F2F2F2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFFFFF;
+}
+.header .logo img {
+  width: 188px;
+  height: 40px;
+  margin: 20px 0;
+}
+.header ul {
+  color: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+.header ul a {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 20px;
+  color: #F2F2F2;
+}
+
+footer .sitemap {
+  padding: 80px 0;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+footer .sitemap li {
+  font-size: 80px;
+  font-weight: 900;
+}
+footer .sitemap-logo a {
+  height: 40px;
+}
+footer .footer {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer .copyright {
+  margin-right: 100px;
+}
+footer .footer .social {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+footer .footer .social a {
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+footer .footer .top {
+  gap: 12px;
+}
+footer .footer .top a {
+  color: #FFFFFF;
+}
+
+.banner {
+  line-height: 1.2;
+  padding-bottom: 160px;
+}
+.banner a {
+  color: #F2F2F2;
+}
+.banner h2,
+.banner h3 {
+  font-weight: bold;
+}
+.banner .banner-title {
+  font-size: 120px;
+  margin: 40px 0;
+}
+.banner .start {
+  font-size: 20px;
+  padding: 20px 40px;
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+  gap: 10px;
+}
+.banner .banner-animation {
+  display: flex;
+  justify-content: end;
+}
+.banner .service {
+  margin: 160px 0;
+}
+.banner .service .service-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.banner .service h2 {
+  display: block;
+  width: 414px;
+  font-size: 32px;
+}
+.banner .service h3 {
+  width: 856px;
+  font-size: 48px;
+}
+.banner .service .service-list {
+  width: 100%;
+  margin: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.banner .service .service-list-li {
+  width: calc((100% - 48px) / 3);
+  gap: 20px;
+  border: 1px solid #525252;
+  border-radius: 16px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.banner .service .service-list-li img {
+  width: 68px;
+}
+.banner .service .service-list-li h3 {
+  font-size: 32px;
+}
+.banner .service .service-list-li p {
+  color: #F2F2F2;
+  line-height: 1.5;
+}
+.banner .partner h2 {
+  font-size: 32px;
+  margin: 80px 0;
+}
+.banner .partner-first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.banner .partner-first img {
+  height: 40px;
+}
+.banner .partner-second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.banner .partner-second img {
+  height: 40px;
+  overflow: clip;
+}
+.banner .recommend-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch, flex-start;
+}
+.banner .recommend {
+  width: 416px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner .recommend .evaluate {
+  line-height: 1.5;
+  margin: 20px 0;
+  color: #F2F2F2;
+}
+.banner .recommend .avatar {
+  display: flex;
+  align-items: end;
+  margin: 21px 0px;
+}
+.banner .recommend .avatar .avatar-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 16px;
+}
+.banner .recommend .avatar .avatar-name h3 {
+  margin-bottom: 4px;
+}
+
+.bg-white {
+  padding: 160px 0;
+  border-radius: 160px;
+  background: white;
+  color: black;
+}
+.bg-white .container {
+  background: white;
+  color: black;
+}
+.bg-white .tools {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-white .tools .tools-title {
+  margin: 80px 0;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+}
+.bg-white .tools-search {
+  line-height: 1.5;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.bg-white .tools-search-bar {
+  width: 100%;
+  padding: 20px 40px;
+  padding-left: 70px;
+  gap: 12px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/search.png?raw=true);
+  background-position: 40px center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.bg-white .tools-search-filter {
+  padding: 20px 32px 20px 40px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  line-height: 1.5;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.tools-search-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.tools-search-row .tools-search-row-button {
+  border-radius: 16px;
+  background: white;
+  padding: 20px 40px;
+  gap: 12px;
+  color: rgb(145, 145, 145);
+}
+.tools-search-row .tools-search-row-button:hover {
+  background: #f2f2f2;
+  color: rgb(2, 2, 2);
+}
+
+.tools-list {
+  margin: 24px 0;
+}
+.tools-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.tools-list li {
+  width: 416px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  border: 1px solid #F2F2F2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.tools-list li:hover .img {
+  transform: scale(1.2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.tools-list img {
+  width: 416px;
+}
+.tools-list h3 {
+  color: #020202;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.imghover {
+  width: 416px;
+  height: 312px;
+  overflow: hidden;
+}
+
+.img {
+  transition: 0.5s;
+}
+
+.tools-info {
+  flex-grow: 1;
+}
+
+.tools-info,
+.tools-ai,
+.tools-tag {
+  padding: 20px 32px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.tools-info p {
+  color: #525252;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 12px;
+}
+
+.tools-ai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.tools-ai p {
+  font-weight: 700;
+}
+
+.tools-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.tools-tag a {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true");
+  background-size: contain;
+}
+.tools-tag p {
+  font-weight: 400;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.pagination li {
+  width: 48px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+.pagination li a {
+  padding: 16px 20px;
+  color: rgb(2, 2, 2);
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+.pagination li a:hover {
+  color: #FFFFFF;
+  background: #000;
+}
+
+.CallToActoin {
+  padding: 80px;
+  margin: 80px;
+}
+.CallToActoin h2 {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+.CallToActoin .CallToAction-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.CallToActoin a {
+  padding: 20px 32px 20px 40px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #F2F2F2;
+  display: block;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+}
+.CallToActoin a:hover {
+  color: #000;
+  background: white;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+  .banner .service .service-list-li {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  .service-list-li {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .service-list-li {
+    width: 100%;
+  }
+}/*# sourceMappingURL=all.css.map */
