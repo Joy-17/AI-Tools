@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  width: 1296px;
+  max-width: 1296px;
   margin: auto;
   font-size: 16px;
   font-family: "Noto Sans TC";
@@ -101,8 +101,12 @@ footer .sitemap li {
   font-size: 80px;
   font-weight: 900;
 }
-footer .sitemap-logo a {
-  height: 40px;
+footer .sitemap-logo {
+  padding: 20px 0px;
+}
+footer .sitemap-logo img {
+  max-width: 100%;
+  max-height: 60%;
 }
 footer .footer {
   margin: 32px 0;
@@ -170,7 +174,6 @@ footer .footer .top a {
   font-size: 32px;
 }
 .banner .service h3 {
-  width: 856px;
   font-size: 48px;
 }
 .banner .service .service-list {
@@ -444,6 +447,9 @@ footer .footer .top a {
   color: #FFFFFF;
   background: #000;
 }
+.pagination li .material-symbols-outlined {
+  padding: 16px 12px;
+}
 
 .CallToActoin {
   padding: 80px;
@@ -477,6 +483,14 @@ footer .footer .top a {
   background: white;
 }
 
+@media (max-width: 1296px) {
+  .container {
+    max-width: 100%;
+  }
+  .tools-list ul {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 992px) {
   .container {
     max-width: 940px;
@@ -491,6 +505,9 @@ footer .footer .top a {
   }
   .service-list-li {
     width: 100%;
+  }
+  footer .sitemap .service-list li {
+    font-size: 60px;
   }
 }
 @media (max-width: 576px) {
