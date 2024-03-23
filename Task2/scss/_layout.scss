@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #FFFFFF;
-
+    
     .logo {
         img {
             width: 188px;
@@ -45,10 +45,10 @@ footer {
     }
 
     .sitemap-logo {
-        
-        a {
-
-            height: 40px;
+        padding: 20px 0px;
+        img {
+            max-width:100%;
+            max-height: 60%;
         }
 
     }
