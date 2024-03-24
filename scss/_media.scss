@@ -3,56 +3,38 @@
   .container {
     max-width: 100%;
   }
-  .banner{
-    .recommend-list{
+  .banner {
+    .recommend-list {
       justify-content: space-evenly;
-      .recommend{
-        width: calc((100% - 48px));
-        margin: 10px 0 ;
-        
+      .recommend {
+        width: calc((100% - 48px) / 3);
+        margin: 10px 0;
       }
     }
   }
- 
-
 
   .tools-list {
     ul {
       justify-content: space-around;
-      // li{
-      //    width: 624px;
-      // }
     }
   }
-  
 }
 
-// @media screen and (max-width: 850px) {
-//   .tools-search {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-
-//   .tools-search-filter {
-//     width: 50%;
-//   }
-
-//   .tools-search-filter:last-child {
-//     order: 3; /* 將第二個按鈕移到最後 */
-//   }
-
-//   .tools-search-filter .material-symbols-outlined {
-//     display: none;
-//   }
-
-//   .tools-search-row {
-//     width: 100%;
-//   }
-
-//   .tools-search-row-button {
-//     width: 100%;
-//   }
-// }
+// 1100px
+@media (max-width: 1125px) {
+  .container {
+    max-width: 100%;
+  }
+  // .banner {
+  //   .recommend-list {
+  //     justify-content: space-evenly;
+  //     .recommend {
+  //       width: calc((100% - 48px));
+  //       margin: 10px 0;
+  //     }
+  //   }
+  // }
+}
 
 // 992px
 @media (max-width: 992px) {
@@ -66,13 +48,20 @@
         width: 100%;
       }
     }
-  }
-  .tools-search-row {
-    .tools-search-row-button {
-      padding: 20px 22px;
+    .recommend-list {
+      justify-content: space-evenly;
+      .recommend {
+        width: calc((100% - 48px));
+        margin: 10px 0;
+      }
     }
   }
-   
+
+  .tools-search-row {
+    .tools-search-row-button {
+      padding: 20px 20px;
+    }
+  }
 }
 
 // 767px
@@ -94,13 +83,13 @@
       }
     }
   }
-  
+
   .tools-search {
     display: flex;
     flex-wrap: wrap;
   }
-  .tools-search-filter{
-    margin: 30px 0 ;
+  .tools-search-filter {
+    margin: 30px 0;
     &:first-child {
       order: 3; /* 將第二個按鈕移到最後 */
     }
@@ -114,5 +103,10 @@
 
   .service-list-li {
     width: 100%;
+  }
+  .tools-search-row {
+    .tools-search-row-button {
+      padding: 20px 15px;
+    }
   }
 }
